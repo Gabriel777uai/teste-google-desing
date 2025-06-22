@@ -292,16 +292,17 @@ body {
 .btn-primary-outline,
 .btn-primary-outline:active {
   background-color: transparent !important;
-  border-color: #c37a7a;
-  color: #c37a7a;
+  border-color: #70f323;
+  color: #000000;
+  background: #70f323;
 }
 .btn-primary-outline:hover,
 .btn-primary-outline:focus,
 .btn-primary-outline.focus,
 .btn-primary-outline.active {
-  color: #9f4848 !important;
+  color: #40a704 !important;
   background-color: transparent!important;
-  border-color: #9f4848 !important;
+  border-color: #43af04 !important;
   box-shadow: none!important;
 }
 .btn-primary-outline.disabled,
@@ -961,4 +962,21 @@ a {
 }
 .cid-uOGUTOlHgR .media-container-row .mbr-text {
   text-align: center;
+}
+.headerPrincipal section {
+  position: fixed;
+  width: 100%;
+  
+  background: #00000025;
+  z-index: 1000;
+}
+.headerPrincipal section img {
+  width: 250px;
+  padding: 10px;
+}
+
+.cid-uOHX1H4fIW {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/capa-app-br-1024x500.png");
 }
