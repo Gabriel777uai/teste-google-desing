@@ -1,3 +1,37 @@
+/* Estilos feitos manualmente... Codigo aqui! */
+.headerPrincipal section {
+  position: fixed;
+  width: 100%;
+   transition: 1s;
+  background: #00000025;
+  z-index: 1000;
+}
+.headerPrincipal section img {
+  width: 250px;
+  padding: 10px;
+  transition: 1s;
+  
+}
+/* imagem background do topo */
+.cid-uOHX1H4fIW {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../assets/images/capa-app-br-1024x500.png");
+}
+ 
+.headerPrincipal section.notVibility {
+  transition: linear .3s;
+  opacity: 0;
+} 
+.headerPrincipal section.notVibility img {
+  
+  transition: 1s;
+}
+/* -------------------------------------------------------------------------------------- */
+
+
+
+/* Estilos padrão do mobrise daqui para baixo! */
 .btn {
   border-width: 2px;
 }
@@ -963,20 +997,4 @@ a {
 .cid-uOGUTOlHgR .media-container-row .mbr-text {
   text-align: center;
 }
-.headerPrincipal section {
-  position: fixed;
-  width: 100%;
-  
-  background: #00000025;
-  z-index: 1000;
-}
-.headerPrincipal section img {
-  width: 250px;
-  padding: 10px;
-}
-
-.cid-uOHX1H4fIW {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-image: url("../../../assets/images/capa-app-br-1024x500.png");
-}
+/* Fim estilos mobrise _------------------------------------------- */
