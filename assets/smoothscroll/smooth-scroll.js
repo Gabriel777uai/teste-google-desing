@@ -442,24 +442,34 @@
 let header = document.getElementById("headerScroll");
 
 if (header) {
+
   window.addEventListener("scroll", function () {
-    const currentScroll =
-      window.pageYOffset || document.documentElement.scrollTop;
-    const previousScroll = this.previousScroll || 0;
+    
+  const currentScroll =
+  window.pageYOffset || document.documentElement.scrollTop;
+  
+  const previousScroll = this.previousScroll || 0;
 
-    if (currentScroll > previousScroll) {
-      // Rolar para baixo
-      isScrollingDown = true;
-      this.document.querySelector("#headerScroll").classList.add("notVibility");
-    } else {
-      // Rolar para cima ou não rolar
-      isScrollingDown = false;
-      this.document
-        .querySelector("#headerScroll")
-        .classList.remove("notVibility");
-    }
+  if (currentScroll > previousScroll) {
 
-    this.previousScroll = currentScroll;
+    // Rolar para baixo
+  
+    isScrollingDown = true;
+    this.document.querySelector("#headerScroll").classList.add("notVibility");
+
+  } else {
+    // Rolar para cima ou não rolar
+
+    isScrollingDown = false;
+    
+    this.document
+    .querySelector("#headerScroll")
+    .classList.remove("notVibility");
+    
+  }
+
+  this.previousScroll = currentScroll;
+    
   });
 }
 
